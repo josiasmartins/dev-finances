@@ -1,0 +1,6 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* o tamanho da caixa vai ser o tamanho dela agora */
+    box-sizing: border-box;
+}
