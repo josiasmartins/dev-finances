@@ -2,6 +2,7 @@
 
 /* referencia a raiz do html */
 :root{
+    /* variavel */
     --dark-blue:#363f5f;
 
 }
@@ -16,6 +17,19 @@
 body {
     background-color: #f0f2f5;
     font-family: 'Poppins', sans-serif;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    /* largura da borda */
+    border-width: 0;
 }
 
 .container {
@@ -71,11 +85,25 @@ h2 {
 
     margin-bottom: 2rem;
     color: var(--dark-blue);
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
 };
 
 .card h3 {
     font-weight: normal;
     font-size: 1rem;
+
+    /* TODO: verificar porque não funcionou */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h3-space{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .card p {
     font-size: 2rem;
